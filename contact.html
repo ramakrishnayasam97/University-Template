@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="eduford_img/logo.png" alt=""></a>
+            <div class="nav-links">
+                <i class="fa fa-times" Onclick="Hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Courses.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" Onclick="Showmenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+<!-- -----------Content Us------------- -->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487295.0253901114!2d78.12783259462546!3d17.41215304956392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1669128130720!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="concat-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ ROAD, ABC BUILDING</h5>
+                        <p>HYDERABAD, TELANGANA</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+012345678</h5>
+                        <p>Monday to Friday, 10AM to5PM</p>
+                    </span>
+                </div>
+            </div>
+            <div class="concat-col">
+                <form action="" class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="3" placeholder="Your Comment">
+                    </textarea><br>
+                    <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                </form>
+        
+            </div>
+        </div>
+
+    </section>
+
+
+<!-- --------------footer------ -->
+
+      <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, 
+        praesentium placeat vel doloribus dolor ipsum pariatur ut voluptatum eos.<br> 
+        Ipsum dolorum voluptate explicabo eos esse perspiciatis ex, voluptas impedit a?</p>
+
+      </section>
+
+
+<!-- -----javascript for toggle----------- -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function Showmenu(){
+            navLinks.style.right = "0";
+        }
+            function Hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+

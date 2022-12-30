@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+    <style type="text/css">
+        /* h1{
+            text-align: right;
+            margin: 0 10%;
+            color: #fff;
+        } */
+        div{
+            width: 400px;
+            height: 300px;
+            border: 5px solid rgb(140, 145, 146);
+            margin: 5% 65%;
+            padding: 100px;
+            box-sizing:border-box;
+            background-color: lightslategrey;
+            /* background-image:url(eduford_img/library.png); */
+        }
+
+        div h1{
+            text-align: center;
+            margin: 0 15%;
+            color: #fff;
+            padding: 0px 10px;
+            margin-top: -70px;
+        }
+        body{
+            background-image:url(eduford_img/banner.png);
+             background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+        div button{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 13px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+        div button:hover{
+            border: 1px solid #f44336;
+            background: #f44336;
+            transition: 1s;   
+        }
+
+
+
+
+
+
+
+    </style>
+<body>
+    <!-- <h1>Welcome To Login Page  </h1> -->
+
+        <div>
+            <h1>LOGIN</h1>
+
+            <label for="username">username</label>
+            <input type="text" name="text" id="username" placeholder="enter your name"> 
+            <br><br>
+
+            <label for="paasword">password</label>
+            <input type="password" name="text" id="password" placeholder="entre your password">
+            <br><br>
+
+            <button onclick="login()">submit</button>
+        </div>
+    <script type="text/javascript">
+
+        function login()
+        {
+            var uname=document.getElementById('username').value;
+            var pass=document.getElementById('password').value;
+
+            if (uname=="world" && pass=="123") 
+            {
+                location.assign("file:///C:/Users/nagaa/OneDrive/Desktop/project/university%20website/index.html");
+            }
+            else
+            {
+                window.alert("login failed");
+            }
+
+            // C:\Users\nagaa\OneDrive\Desktop\project\university website
+            // file:///C:/Users/nagaa/OneDrive/Desktop/project/index.html
+        }
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+

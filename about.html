@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="eduford_img/logo.png" alt=""></a>
+            <div class="nav-links">
+                <i class="fa fa-times" Onclick="Hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Courses.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" Onclick="Showmenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+<!-- -----------about us content------------- -->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the World's Largest University</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                 Laborum esse aut sed at in quae dolor maxime ratione? Asperiores, 
+                officia fuga veniam velit magni beatae error vel est aperiam perspiciatis.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="eduford_img/about.jpg" alt="">
+            </div>   
+        </div>
+
+    </section>
+
+
+
+
+
+<!-- --------------footer------ -->
+
+      <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, 
+        praesentium placeat vel doloribus dolor ipsum pariatur ut voluptatum eos.<br> 
+        Ipsum dolorum voluptate explicabo eos esse perspiciatis ex, voluptas impedit a?</p>
+
+      </section>
+
+
+<!-- -----javascript for toggle----------- -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function Showmenu(){
+            navLinks.style.right = "0";
+        }
+            function Hidemenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
+
+<!-- -------------------------------------------------------- -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="login">
+        <h3>Welcome To Login Page</h3>
+         <div>
+            User Name:<br>
+            <input type="text" name="text" id="username" placeholder="Enter Your mail"><br>
+            Password:<br>
+            <input type="password" name="text" id="paasword" placeholder="Enter Your Passward"><br>
+            Submit:<br>
+                <button onclick="login()">Submit</button>  
+         </div>
+    </section>
+
+        <script type="text/javascript">
+            function login()
+            {
+                var uname=document.getElementById('username').value;
+                var password=document.getElementById('password').value;
+
+                if (uname=="rk" && password=="123")
+                {
+                    location.assign("file:///C:/Users/nagaa/OneDrive/Desktop/project/index.html");
+                }
+                else
+                {
+                    window.alert("login failed");
+                }
+                
+            }
+
+        </script>
+
+</body>
+</html> -->
+
+
